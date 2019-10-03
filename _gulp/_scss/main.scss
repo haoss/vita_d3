@@ -1,0 +1,41 @@
+// @import "node_modules/normalize-scss/sass/_normalize.scss";
+
+$root-font-size: 16px;
+$grid-columns: 12;
+$grid-gutter-width: 20px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1250px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1220px
+);
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "1-base/_mixin.scss";
+@import "1-base/_variables.scss";
+@import "1-base/_font.scss";
+@import "./dist/font/icomoon/variables.scss";
+@import "./dist/font/icomoon/style.scss";
+@import "1-base/_base.scss";
+
+@import "2-layout/_buttons.scss";
+@import "2-layout/_forms.scss";
+@import "2-layout/_menu.scss";
+@import "2-layout/_header.scss";
+@import "2-layout/_footer.scss";
+// @import "./dist/js/libs/selectric/selectric.scss";
+@import "./dist/js/libs/selectric/selectric-flat.scss";
+
+@import "3-modules/_modules.scss";
+
+@import "4-utils/_clear.scss";
+@import "4-utils/_media-queries.scss";

@@ -1,0 +1,209 @@
+doctype
+
+html(lang="ru")
+
+  -var active = 'Главная' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Главная' + ' - VitaD3' //title страницы для генерации верстки
+
+  include ./_include/_head
+
+  body
+
+    // Preloader
+    include ./_include/_preloader
+
+    include ./_include/_header
+
+    // Content
+    main.content
+
+      // Product
+      .product
+        .container
+
+          .row
+            .col-md-6
+              img.product__img(src="./images/product.png", alt="")
+            .col-md-6
+              .product__content
+                h1 мицелярная форма витамина d, естественная для усвоения организмом
+                a(href="#contacts" rel='m_PageScroll2id').product__btn купить
+
+      // Section functions
+      section#functions.section.functions
+        .container
+
+          .section__head
+            div
+              h2 Основные биологические функции Витамина D3
+
+          .functions__row
+            div
+              .functions__block
+                img(src="./images/functions-icon-1.png", alt="")
+                .functions__block-head Укрепление иммунитета
+                p Иммунная система - целый механизм, который требует комплексного подхода.
+            div
+              .functions__block
+                img(src="./images/functions-icon-2.png", alt="")
+                .functions__block-head Здоровье костей и мышц
+                p Иммунная система - целый механизм, который требует комплексного подхода.
+            div
+              .functions__block
+                img(src="./images/functions-icon-3.png", alt="")
+                .functions__block-head Доддержка нервной системы
+                p Иммунная система - целый механизм, который требует комплексного подхода.
+
+      // Section tastes
+      section#tastes.section.tastes
+        .container
+
+          .section__head
+            div
+              h2 Пробуйте разные вкусы
+
+      // Section research
+      section#research.section.research
+        .container
+
+          .section__head
+            div
+              h2 Научные исследования показали
+
+      // Section recommendations
+      section#recommendations.section.recommendations
+        .container
+
+          .section__head
+            div
+              h2 Рекомендации по приёму витамина D3
+
+          .recommendations__content.recommendations__content--top
+            p До 80 % населения России испытывает дефицит Витамина D3, который сложно восполнить естественным путем (По данным 
+              a(href="#!") Российской Ассоциации Эндокринологов
+              | ).
+            p Недостаточность витамина D3 имеет широкое распространение в России, достигая 74-83,2%, причем недостаточность уровнеи витамина D3 характерна для всех возрастных групп. 
+
+          .recommendations__row
+            div
+              .recommendations__block
+                img(src="./images/recommendations-icon-1.png", alt="")
+                p Беременным и кормящим женщинам для профилактики рекомендуется получать не менее 800-1200 МЕ витамина D3 в сутки. 
+            div
+              .recommendations__block
+                img(src="./images/recommendations-icon-2.png", alt="")
+                p При нарушении метаболизма витамина D3, рекомендуется приём витамина D3 в 2-3 раза превышающих суточную дозу.
+            div
+              .recommendations__block
+                img(src="./images/recommendations-icon-3.png", alt="")
+                p Лицам в возрасте 18-50 лет для профилактики дефицита витамина D3 рекомендуется получать не менее 600-800 МЕ витамина D3 в сутки. 
+            div
+              .recommendations__block
+                img(src="./images/recommendations-icon-4.png", alt="")
+                p Лицам старше 50 лет для профилактики дефицита витамина D3 рекомендуется получать не менее 800-1000 МЕ витамина D3 в сутки. 
+
+          .recommendations__content
+            p Для поддержания уровня 25(ОН)D более 30 нг/мл может потребоваться потребление не менее 1500-2000 МЕ витамина D3 в сутки.
+            p Важно! Без медицинского наблюдения и контроля уровня 25(ОН) D3 в крови не рекомендуется назначение доз витамина D3 более 10 000 МЕ в сутки на длительный период > 6 месяцев).
+
+      // Section contacts
+      section#contacts.section.contacts
+        .container
+
+          .section__head.section__head--contacts
+            div
+              h2 Где купить витамин VITA D3
+
+          .contacts__title Аптеки Краснодара
+          .row
+            .col-xl-6
+              .contacts__city 
+                div Город:
+                div
+                  select.selectric
+                    option Краснодар 1
+                    option Краснодар 2
+
+              .contacts__address
+                .contacts__address-table
+                  .contacts__address-row
+                    .contacts__address-block.nowrap.text-center №
+                    .contacts__address-block.nowrap Адрес магазина
+                    .contacts__address-block.nowrap Часы работы
+                  .contacts__address-row
+                    .contacts__address-block.nowrap.text-center 1
+                    .contacts__address-block 350000, Краснодарский край, Краснодар г, Головатого ул, дом № 313
+                      .d-sm-none Часы работы - 09:30-22:30
+                    .contacts__address-block.nowrap 09:30-22:30
+                  .contacts__address-row
+                    .contacts__address-block.nowrap.text-center 2
+                    .contacts__address-block 350000, Краснодарский край, Краснодар г, Головатого ул, дом № 313
+                      .d-sm-none Часы работы - 09:30-22:30
+                    .contacts__address-block.nowrap 09:30-22:30
+                  .contacts__address-row
+                    .contacts__address-block.nowrap.text-center 3
+                    .contacts__address-block 350000, Краснодарский край, Краснодар г, Головатого ул, дом № 313
+                      .d-sm-none Часы работы - 09:30-22:30
+                    .contacts__address-block.nowrap 09:30-22:30
+                  .contacts__address-row
+                    .contacts__address-block.nowrap.text-center 4
+                    .contacts__address-block 350000, Краснодарский край, Краснодар г, Головатого ул, дом № 313
+                      .d-sm-none Часы работы - 09:30-22:30
+                    .contacts__address-block.nowrap 09:30-22:30
+                  .contacts__address-row
+                    .contacts__address-block.nowrap.text-center 5
+                    .contacts__address-block 350000, Краснодарский край, Краснодар г, Головатого ул, дом № 313
+                      .d-sm-none Часы работы - 09:30-22:30
+                    .contacts__address-block.nowrap 09:30-22:30
+                  //- .contacts__address-row
+                  //-   .contacts__address-block.nowrap.text-center 6
+                  //-   .contacts__address-block 350000, Краснодарский край, Краснодар г, Головатого ул, дом № 313
+                  //-     .d-sm-none Часы работы - 09:30-22:30
+                  //-   .contacts__address-block.nowrap 09:30-22:30
+                  //- .contacts__address-row
+                  //-   .contacts__address-block.nowrap.text-center 7
+                  //-   .contacts__address-block 350000, Краснодарский край, Краснодар г, Головатого ул, дом № 313
+                  //-     .d-sm-none Часы работы - 09:30-22:30
+                  //-   .contacts__address-block.nowrap 09:30-22:30
+                  //- .contacts__address-row
+                  //-   .contacts__address-block.nowrap.text-center 8
+                  //-   .contacts__address-block 350000, Краснодарский край, Краснодар г, Головатого ул, дом № 313
+                  //-     .d-sm-none Часы работы - 09:30-22:30
+                  //-   .contacts__address-block.nowrap 09:30-22:30
+                  //- .contacts__address-row
+                  //-   .contacts__address-block.nowrap.text-center 9
+                  //-   .contacts__address-block 350000, Краснодарский край, Краснодар г, Головатого ул, дом № 313
+                  //-     .d-sm-none Часы работы - 09:30-22:30
+                  //-   .contacts__address-block.nowrap 09:30-22:30
+                  //- .contacts__address-row
+                  //-   .contacts__address-block.nowrap.text-center 10
+                  //-   .contacts__address-block 350000, Краснодарский край, Краснодар г, Головатого ул, дом № 313
+                  //-     .d-sm-none Часы работы - 09:30-22:30
+                  //-   .contacts__address-block.nowrap 09:30-22:30
+                  //- .contacts__address-row
+                  //-   .contacts__address-block.nowrap.text-center 11
+                  //-   .contacts__address-block 350000, Краснодарский край, Краснодар г, Головатого ул, дом № 313
+                  //-     .d-sm-none Часы работы - 09:30-22:30
+                  //-   .contacts__address-block.nowrap 09:30-22:30
+                  //- .contacts__address-row
+                  //-   .contacts__address-block.nowrap.text-center 12
+                  //-   .contacts__address-block 350000, Краснодарский край, Краснодар г, Головатого ул, дом № 313
+                  //-     .d-sm-none Часы работы - 09:30-22:30
+                  //-   .contacts__address-block.nowrap 09:30-22:30
+                  //- .contacts__address-row
+                  //-   .contacts__address-block.nowrap.text-center 13
+                  //-   .contacts__address-block 350000, Краснодарский край, Краснодар г, Головатого ул, дом № 313
+                  //-     .d-sm-none Часы работы - 09:30-22:30
+                  //-   .contacts__address-block.nowrap 09:30-22:30
+
+            .col-xl-6
+              .contacts__map
+                .contacts__map-wrapper
+
+    include ./_include/_footer
+    div(style="height: 1000px; background-color: #000")
+
+    // Load Scripts
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+

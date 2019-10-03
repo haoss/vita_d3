@@ -1,0 +1,13 @@
+// Header
+header.header
+  .container
+    
+    -var navigation = { 'Особенности': '#functions', 'Продукция': '#tastes', 'Иследования': '#research', 'Рекомендации': '#recommendations', 'Где купить': '#contacts'};
+    
+    nav.navigation(role="navigation")
+      ul
+        each val, key in navigation
+          li
+            a(href=val, title=key, rel='m_PageScroll2id')= key
+
+.header-holder

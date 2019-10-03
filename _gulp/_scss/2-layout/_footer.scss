@@ -1,0 +1,97 @@
+/* footer */
+.footer {
+  background-color: #dadada;
+  border-top: 3px solid $color-yellow;
+  border-bottom: 30px solid $color-yellow;
+  padding: 15px 0;
+  font-size: rem(14px);
+  color: #808080;
+
+  &__logo {
+    margin-bottom: 23px;
+    img {
+      display: block;
+    }
+  }
+
+  &__copyright {
+    margin-bottom: 25px;
+  }
+
+  &__address {
+    margin-bottom: 17px;
+    p {
+      line-height: 20px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__links {
+    font-size: rem(12px);
+    white-space: nowrap;
+    a {
+      color: #808080;
+      text-decoration: none;
+      display: inline-block;
+      &+a {
+        margin-left: 30px;
+      }
+      &:hover {
+        color: $link-color;
+      }
+    }
+    [class*="icon"] {
+      font-size: 14px;
+      margin-right: 5px;
+      display: inline-block;
+      vertical-align: -1px;
+    }
+  }
+
+  &__nav {
+    float: right;
+    font-size: rem(14px);
+    text-align: right;
+    padding-top: 10px;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        margin-bottom: 14px;
+        // &:last-child {
+        //   margin-bottom: 0;
+        // }
+        a {
+          color: #808080;
+        }
+      }
+    }
+  }
+
+  &__social {
+    overflow: hidden;
+    float: right;
+    background: #e2e2e2;
+    padding: 5px 10px;
+    a {
+      display: inline-block;
+      color: #898989;
+      text-decoration: none;
+      width: 28px;
+      height: 28px;
+      text-align: center;
+      font-size: rem(16px);
+      // background: pink;
+      line-height: 28px;
+      [class*="icon"] {
+        line-height: 1;
+        display: inline-block;
+        vertical-align: -2px;
+      }
+      &:hover {
+        color: $link-color;
+      }
+    }
+  }
+}
