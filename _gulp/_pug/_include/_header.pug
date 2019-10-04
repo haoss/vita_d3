@@ -1,13 +1,49 @@
 // Header
 header.header
-  .container
+  -var navigation = { 'Особенности': '#functions', 'Продукция': '#tastes', 'Иследования': '#research', 'Рекомендации': '#recommendations', 'Где купить': '#contacts'};
+  .header__top
+    .container
+
+      .header__links
+        a(href="#!") 
+          i.icon-location
+          | Россия, Москва
+        a(href="mailto:") 
+          i.icon-envelope
+          | info@vitad3.ru
+
+      .social.header__social
+        a(href="#!" target="_blank")
+          i.icon-facebook
+        a(href="#!" target="_blank")
+          i.icon-twitter
+        a(href="#!" target="_blank")
+          i.icon-linkedin
+        a(href="#!" target="_blank")
+          i.icon-pinterest
+        a(href="#!" target="_blank")
+          i.icon-google-plus
+        a(href="#!" target="_blank")
+          i.icon-youtube
     
-    -var navigation = { 'Особенности': '#functions', 'Продукция': '#tastes', 'Иследования': '#research', 'Рекомендации': '#recommendations', 'Где купить': '#contacts'};
+  .header__bottom
+    .container
+
+      .logo.header__logo
+        img(src="./images/logo.png", alt="")
+        span - энергия солнца внутри!
     
-    nav.navigation(role="navigation")
-      ul
-        each val, key in navigation
-          li
-            a(href=val, title=key, rel='m_PageScroll2id')= key
+      nav.navigation.header__navigation(role="navigation")
+        button.hamburger.hamburger--spin.navigation__btn(type='button')
+          span.hamburger-box
+            span.hamburger-inner
+        ul
+          each val, key in navigation
+            li
+              a(href=val, title=key, rel='m_PageScroll2id')= key
+
+      button.hamburger.hamburger--spin.header__btn(type='button')
+        span.hamburger-box
+          span.hamburger-inner
 
 .header-holder

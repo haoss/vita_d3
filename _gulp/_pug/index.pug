@@ -22,9 +22,9 @@ html(lang="ru")
         .container
 
           .row
-            .col-md-6
+            .col-lg-6.col-md-5
               img.product__img(src="./images/product.png", alt="")
-            .col-md-6
+            .col-lg-6.col-md-7
               .product__content
                 h1 мицелярная форма витамина d, естественная для усвоения организмом
                 a(href="#contacts" rel='m_PageScroll2id').product__btn купить
@@ -58,9 +58,32 @@ html(lang="ru")
       section#tastes.section.tastes
         .container
 
-          .section__head
+          .section__head.section__head--tastes
             div
               h2 Пробуйте разные вкусы
+
+          .tastes__carousel
+            .swiper-container
+              .swiper-wrapper
+                .swiper-slide
+                  .tastes__block
+                    img(src="./tmp/mokap/standart.png", alt="").img-fluid
+                    .tastes__block-name VITA D3 Standart
+                .swiper-slide
+                  .tastes__block
+                    img(src="./tmp/mokap/orange.png", alt="").img-fluid
+                    .tastes__block-name VITA D3 Orange
+                .swiper-slide
+                  .tastes__block
+                    img(src="./tmp/mokap/banan.png", alt="").img-fluid
+                    .tastes__block-name VITA D3 Banan
+                .swiper-slide
+                  .tastes__block
+                    img(src="./tmp/mokap/lemon.png", alt="").img-fluid
+                    .tastes__block-name VITA D3 Lemon
+              //  Add Arrows 
+              .swiper-button-next
+              .swiper-button-prev
 
       // Section research
       section#research.section.research
@@ -69,6 +92,23 @@ html(lang="ru")
           .section__head
             div
               h2 Научные исследования показали
+
+          .research__carousel
+            .swiper-container
+              .swiper-wrapper
+                .swiper-slide
+                  .research__block
+                    img(src="./tmp/carousel-img.png", alt="").img-fluid
+                .swiper-slide
+                  .research__block
+                    img(src="./tmp/carousel-img.png", alt="").img-fluid
+                .swiper-slide
+                  .research__block
+                    img(src="./tmp/carousel-img.png", alt="").img-fluid
+              //  Add Arrows 
+              .swiper-button-next
+              .swiper-button-prev
+              .swiper-pagination
 
       // Section recommendations
       section#recommendations.section.recommendations
@@ -201,7 +241,7 @@ html(lang="ru")
                 .contacts__map-wrapper
 
     include ./_include/_footer
-    div(style="height: 1000px; background-color: #000")
+    //- div(style="height: 1000px; background-color: #000")
 
     // Load Scripts
     include ./_include/_footer-js

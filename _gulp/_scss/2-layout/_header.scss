@@ -1,12 +1,13 @@
 /* header */
 .header {
-  background-color: $color-gray;
+  background-color: $color-white;
   height: 100px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
+  box-shadow: 0 0 5px rgba($color-black,.25);
   ul {
     li {
       display: inline-block;
@@ -14,5 +15,74 @@
   }
   &-holder {
     height: 100px;
+  }
+
+  &__top {
+    height: 40px;
+    background: #f3f3f3;
+    @include clearfix;
+  }
+
+  &__social {
+    float: right;
+  }
+
+  &__links {
+    font-size: rem(12px);
+    white-space: nowrap;
+    float: left;
+    margin: 11px 0;
+    a {
+      color: #808080;
+      text-decoration: none;
+      display: inline-block;
+      &+a {
+        margin-left: 30px;
+      }
+      &:hover {
+        color: $link-color;
+      }
+    }
+    [class*="icon"] {
+      font-size: 14px;
+      margin-right: 5px;
+      display: inline-block;
+      vertical-align: -1px;
+    }
+  }
+
+  &__logo {
+    float: left;
+    margin: 11px 0;
+  }
+  &__navigation {
+    float: right;
+  }
+
+  &__btn {
+    width: 60px;
+    height: 60px;
+    float: right;
+    display: none;
+    opacity: 1;
+    transition: opacity 0.35s;
+    &.is-active {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}
+
+.logo {
+  font-size: rem(22px);
+  color: #206ab2;
+  text-transform: uppercase;
+  font-weight: 500;
+  span {
+    display: inline-block;
+    margin-left: 5px;
+  }
+  img {
+    vertical-align: -4px;
   }
 }

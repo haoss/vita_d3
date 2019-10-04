@@ -18,16 +18,27 @@
         <!-- Preloader-->
         <!-- Header-->
         <header class="header">
-            <div class="container">
-                <nav class="navigation" role="navigation">
-                    <ul>
-                        <li><a href="#functions" title="Особенности" rel="m_PageScroll2id">Особенности</a></li>
-                        <li><a href="#tastes" title="Продукция" rel="m_PageScroll2id">Продукция</a></li>
-                        <li><a href="#research" title="Иследования" rel="m_PageScroll2id">Иследования</a></li>
-                        <li><a href="#recommendations" title="Рекомендации" rel="m_PageScroll2id">Рекомендации</a></li>
-                        <li><a href="#contacts" title="Где купить" rel="m_PageScroll2id">Где купить</a></li>
-                    </ul>
-                </nav>
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__links"><a href="#!"> <i class="icon-location"></i>Россия, Москва</a><a href="mailto:"> <i class="icon-envelope"></i>info@vitad3.ru</a></div>
+                    <div class="social header__social"><a href="#!" target="_blank"><i class="icon-facebook"></i></a><a href="#!" target="_blank"><i class="icon-twitter"></i></a><a href="#!" target="_blank"><i class="icon-linkedin"></i></a><a href="#!" target="_blank"><i class="icon-pinterest"></i></a><a href="#!" target="_blank"><i class="icon-google-plus"></i></a><a href="#!" target="_blank"><i class="icon-youtube"></i></a></div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="container">
+                    <div class="logo header__logo"><img src="./images/logo.png" alt=""><span>- энергия солнца внутри!</span></div>
+                    <nav class="navigation header__navigation" role="navigation">
+                        <button class="hamburger hamburger--spin navigation__btn" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+                        <ul>
+                            <li><a href="#functions" title="Особенности" rel="m_PageScroll2id">Особенности</a></li>
+                            <li><a href="#tastes" title="Продукция" rel="m_PageScroll2id">Продукция</a></li>
+                            <li><a href="#research" title="Иследования" rel="m_PageScroll2id">Иследования</a></li>
+                            <li><a href="#recommendations" title="Рекомендации" rel="m_PageScroll2id">Рекомендации</a></li>
+                            <li><a href="#contacts" title="Где купить" rel="m_PageScroll2id">Где купить</a></li>
+                        </ul>
+                    </nav>
+                    <button class="hamburger hamburger--spin header__btn" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+                </div>
             </div>
         </header>
         <div class="header-holder"></div>
@@ -37,8 +48,8 @@
             <div class="product">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6"><img class="product__img" src="./images/product.png" alt=""></div>
-                        <div class="col-md-6">
+                        <div class="col-lg-6 col-md-5"><img class="product__img" src="./images/product.png" alt=""></div>
+                        <div class="col-lg-6 col-md-7">
                             <div class="product__content">
                                 <h1>мицелярная форма витамина d, естественная для усвоения организмом</h1><a class="product__btn" href="#contacts" rel="m_PageScroll2id">купить</a>
                             </div>
@@ -79,9 +90,38 @@
             <!-- Section tastes-->
             <section class="section tastes" id="tastes">
                 <div class="container">
-                    <div class="section__head">
+                    <div class="section__head section__head--tastes">
                         <div>
                             <h2>Пробуйте разные вкусы</h2>
+                        </div>
+                    </div>
+                    <div class="tastes__carousel">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="tastes__block"><img class="img-fluid" src="./tmp/mokap/standart.png" alt="">
+                                        <div class="tastes__block-name">VITA D3 Standart</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tastes__block"><img class="img-fluid" src="./tmp/mokap/orange.png" alt="">
+                                        <div class="tastes__block-name">VITA D3 Orange</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tastes__block"><img class="img-fluid" src="./tmp/mokap/banan.png" alt="">
+                                        <div class="tastes__block-name">VITA D3 Banan</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tastes__block"><img class="img-fluid" src="./tmp/mokap/lemon.png" alt="">
+                                        <div class="tastes__block-name">VITA D3 Lemon</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                         </div>
                     </div>
                 </div>
@@ -92,6 +132,25 @@
                     <div class="section__head">
                         <div>
                             <h2>Научные исследования показали</h2>
+                        </div>
+                    </div>
+                    <div class="research__carousel">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="research__block"><img class="img-fluid" src="./tmp/carousel-img.png" alt=""></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="research__block"><img class="img-fluid" src="./tmp/carousel-img.png" alt=""></div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="research__block"><img class="img-fluid" src="./tmp/carousel-img.png" alt=""></div>
+                                </div>
+                            </div>
+                            <!--  Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
@@ -233,12 +292,11 @@
                             </ul>
                         </nav>
                         <div class="clear"></div>
-                        <div class="footer__social"><a href="#!" target="_blank"><i class="icon-facebook"></i></a><a href="#!" target="_blank"><i class="icon-twitter"></i></a><a href="#!" target="_blank"><i class="icon-linkedin"></i></a><a href="#!" target="_blank"><i class="icon-pinterest"></i></a><a href="#!" target="_blank"><i class="icon-google-plus"></i></a><a href="#!" target="_blank"><i class="icon-youtube"></i></a></div>
+                        <div class="social footer__social"><a href="#!" target="_blank"><i class="icon-facebook"></i></a><a href="#!" target="_blank"><i class="icon-twitter"></i></a><a href="#!" target="_blank"><i class="icon-linkedin"></i></a><a href="#!" target="_blank"><i class="icon-pinterest"></i></a><a href="#!" target="_blank"><i class="icon-google-plus"></i></a><a href="#!" target="_blank"><i class="icon-youtube"></i></a></div>
                     </div>
                 </div>
             </div>
         </footer>
-        <div style="height: 1000px; background-color: #000"></div>
         <!-- Load Scripts-->
         <!-- Footer js-->
         <script src="./js/libs/jquery/jquery-3.3.1.min.js"></script>
@@ -246,6 +304,7 @@
         <script src="./js/libs/magnific-popup/jquery.magnific-popup.min.js"></script>
         <script src="./js/libs/selectric/jquery.selectric.js"></script>
         <script src="./js/libs/jquery.malihu.PageScroll2id.min.js"></script>
+        <script src="./js/libs/swiper/swiper.min.js"></script>
         <script src="./js/common.js"></script>
     </body>
 </html>
