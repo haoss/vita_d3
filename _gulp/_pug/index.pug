@@ -84,6 +84,7 @@ html(lang="ru")
               //  Add Arrows 
               .swiper-button-next
               .swiper-button-prev
+              .swiper-pagination
 
       // Section research
       section#research.section.research
@@ -238,12 +239,17 @@ html(lang="ru")
 
             .col-xl-6
               .contacts__map
-                .contacts__map-wrapper
+                #map.contacts__map-wrapper
+                  
 
     include ./_include/_footer
     //- div(style="height: 1000px; background-color: #000")
 
     // Load Scripts
     include ./_include/_footer-js
-    script(src="./js/common.js")
+    script(src="./js/common.js?v-05102019-1922")
+    script(src='//api-maps.yandex.ru/2.1/?apikey=5d4c662d-abfc-4da4-9fdb-113bd25eeede&lang=ru_RU' type='text/javascript')
+    script(src="./js/groups.js")
+    script(src="./js/object_list.js")
+      
 

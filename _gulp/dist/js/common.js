@@ -42,6 +42,10 @@ $(document).on('ready', function(){
       nextEl: '.tastes__carousel .swiper-button-next',
       prevEl: '.tastes__carousel .swiper-button-prev',
     },
+    pagination: {
+      el: '.tastes__carousel .swiper-pagination',
+      clickable: true
+    },
     breakpoints: {
       320: {
         slidesPerView: 1,

@@ -166,14 +166,21 @@
   .tastes {
     .swiper-button-prev {
       left: 10px;
+      display: none;
     }
     .swiper-button-next {
       right: 10px;
+      display: none;
+    }
+    .swiper-pagination {
+      display: block;
     }
     &__block {
       min-height: inherit;
+      margin-bottom: 50px;
       img {
         height: auto !important;
+        max-height: 300px;
       }
     }
   }
