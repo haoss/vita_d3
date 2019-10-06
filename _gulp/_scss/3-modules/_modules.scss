@@ -121,11 +121,36 @@
   border-top: 0;
   &__block {
     min-height: 150px;
-    margin: 0 242px;
-    // background: pink;
+    margin: 0 auto;
+    max-width: 730px;
+    display: flex;
+    font-style: italic;
+    color: #808080;
+    font-size: rem(15px);
+    p {
+      line-height: 1.3;
+    }
+    &>div {
+      &:first-child {
+        flex-shrink: 0;
+        &+div {
+          flex-grow: 1;
+          padding-left: 40px;
+        }
+      }
+    }
     .img-fluid {
       margin: 0 auto;
       display: block;
+    }
+    &-title {
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: #33b3fa;
+      font-weight: bold;
+      font-size: 18px;
+      font-style: normal;
     }
   }
   .swiper-button-next, .swiper-button-prev {

@@ -5,21 +5,6 @@ $(document).on('ready', function(){
 
   $('select.selectric').selectric();
 
-  // Magnific popup video
-  $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-    disableOn: 700,
-    type: 'iframe',
-    mainClass: 'mfp-fade',
-    removalDelay: 160,
-    preloader: false,
-    fixedContentPos: false
-  });
-
-  $('.open-popup-link').magnificPopup({
-    type: 'inline',
-    midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-  });
-
   mobileNav();
 
   var swiperResearch = new Swiper('.research__carousel .swiper-container', {
