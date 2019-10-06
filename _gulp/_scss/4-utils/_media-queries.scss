@@ -37,9 +37,6 @@
     }
   }
   .research {
-    &__block {
-      margin: 0;
-    }
     .swiper-button-next, .swiper-button-prev {
       display: none;
     }
@@ -243,6 +240,22 @@
     &__block {
       img.img-fluid {
         max-height: 300px;
+      }
+    }
+  }
+  .research {
+    &__block {
+      flex-direction: column;
+      &>div {
+        &:first-child {
+          &+div {
+            padding-left: 0;
+            padding-top: 25px;
+          }
+        }
+      }
+      img {
+        max-width: 150px !important;
       }
     }
   }
