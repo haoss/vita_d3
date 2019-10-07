@@ -79,8 +79,13 @@
   }
   .swiper-button-next, .swiper-button-prev {
     margin-top: -65px;
+    opacity: 1;
+    transition: opacity 0.35s;
     &:focus {
       outline: none;
+    }
+    &:hover {
+      opacity: 0.5;
     }
   }
   .swiper-button-next {
@@ -155,8 +160,13 @@
   }
   .swiper-button-next, .swiper-button-prev {
     margin-top: -95px;
+    opacity: 1;
+    transition: opacity 0.35s;
     &:focus {
       outline: none;
+    }
+    &:hover {
+      opacity: 0.5;
     }
   }
   .swiper-button-next {
@@ -249,7 +259,8 @@
     }
   }
   &__address {
-    margin-right: 65px;
+    margin-right: 55px;
+    padding-right: 10px;
     max-height: 392px;
     overflow-y: auto;
     &::-webkit-scrollbar-track {

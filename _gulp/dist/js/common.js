@@ -17,6 +17,10 @@ $(document).on('ready', function(){
       el: '.research__carousel .swiper-pagination',
       clickable: true
     },
+    autoplay: {
+      delay: 3000,
+    },
+    // effect: 'fade'
   });
 
   var swiperTastes = new Swiper('.tastes__carousel .swiper-container', {
@@ -38,6 +42,9 @@ $(document).on('ready', function(){
       992: {
         slidesPerView: 3
       }
+    },
+    autoplay: {
+      delay: 3000,
     }
   });
 });

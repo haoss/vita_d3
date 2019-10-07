@@ -27,6 +27,7 @@ function init() {
         // Добавляем коллекцию на карту.
         myMap.geoObjects.add(collection);
         // Добавляем подменю.
+
         menuItem
             .append(submenu)
             // Добавляем пункт в меню.
@@ -70,8 +71,6 @@ function init() {
             });
     }
 
-    // Добавляем меню в тэг BODY.
-    menu.appendTo($('body'));
     // Выставляем масштаб карты чтобы были видны все группы.
     myMap.setBounds(myMap.geoObjects.getBounds());
 }

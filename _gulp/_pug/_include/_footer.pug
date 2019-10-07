@@ -27,11 +27,9 @@ footer.footer
       .col-md-6
         nav.footer__nav
           ul
-            li: a(href="#!") Особенности
-            li: a(href="#!") Продукция
-            li: a(href="#!") Иследования
-            li: a(href="#!") Рекомендации
-            li: a(href="#!") Где купить
+            each val, key in navigation
+              li
+                a(href=val, title=key, rel='m_PageScroll2id')= key
 
         .clear
 
